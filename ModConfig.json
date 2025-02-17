@@ -37,13 +37,19 @@
           "ReleaseMetadataName": "Reloaded.Memory.SigScan.ReloadedII.ReleaseMetadata.json"
         }
       }
+    },
+    "GitHubRelease": {
+      "UserName": "RyoTune",
+      "RepositoryName": "P5R.NoHoldupMusic",
+      "UseReleaseTag": false,
+      "AssetFileName": "Mod.zip"
     }
   },
   "IsUniversalMod": false,
   "ModDependencies": [
-    "reloaded.sharedlib.hooks",
+    "p4gpc.inaba",
     "Reloaded.Memory.SigScan.ReloadedII",
-    "p4gpc.inaba"
+    "reloaded.sharedlib.hooks"
   ],
   "OptionalDependencies": [],
   "SupportedAppId": [
