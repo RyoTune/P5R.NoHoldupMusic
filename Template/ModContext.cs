@@ -1,5 +1,4 @@
-﻿using P5R.NoHoldupMusic.Configuration;
-using Reloaded.Mod.Interfaces;
+﻿using Reloaded.Mod.Interfaces;
 using IReloadedHooks = Reloaded.Hooks.ReloadedII.Interfaces.IReloadedHooks;
 
 namespace P5R.NoHoldupMusic.Template
@@ -23,11 +22,6 @@ namespace P5R.NoHoldupMusic.Template
         /// Provides access to the Reloaded logger.
         /// </summary>
         public ILogger Logger { get; set; } = null!;
-
-        /// <summary>
-        /// Provides access to this mod's configuration.
-        /// </summary>
-        public Config Configuration { get; set; } = null!;
 
         /// <summary>
         /// Configuration of this mod.

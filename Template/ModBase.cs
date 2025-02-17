@@ -1,6 +1,4 @@
-﻿using P5R.NoHoldupMusic.Configuration;
-
-namespace P5R.NoHoldupMusic.Template
+﻿namespace P5R.NoHoldupMusic.Template
 {
     /// <summary>
     /// Base class for implementing mod functionality.
@@ -60,12 +58,6 @@ namespace P5R.NoHoldupMusic.Template
                 A. Redo memory modifications.
                 B. Re-activate hooks. (Reloaded.Hooks Supports This!)
             */
-        }
-
-        public virtual void ConfigurationUpdated(Config configuration)
-        {
-            // Apply settings from configuration.
-            // ... your code here.
         }
     }
 }

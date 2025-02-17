@@ -1,5 +1,4 @@
-﻿using P5R.NoHoldupMusic.Configuration;
-using P5R.NoHoldupMusic.Template;
+﻿using P5R.NoHoldupMusic.Template;
 using Reloaded.Hooks.ReloadedII.Interfaces;
 using Reloaded.Mod.Interfaces;
 
@@ -12,7 +11,6 @@ namespace P5R.NoHoldupMusic
         private readonly ILogger log;
         private readonly IMod owner;
 
-        private Config config;
         private readonly IModConfig modConfig;
         private readonly HoldupService _holdup;
 
@@ -22,7 +20,6 @@ namespace P5R.NoHoldupMusic
             this.hooks = context.Hooks;
             this.log = context.Logger;
             this.owner = context.Owner;
-            this.config = context.Configuration;
             this.modConfig = context.ModConfig;
 
             Project.Init(this.modConfig, this.modLoader, this.log, true);
@@ -31,16 +28,6 @@ namespace P5R.NoHoldupMusic
 
             Project.Start();
         }
-
-        #region Standard Overrides
-        public override void ConfigurationUpdated(Config configuration)
-        {
-            // Apply settings from configuration.
-            // ... your code here.
-            config = configuration;
-            log.WriteLine($"[{modConfig.ModId}] Config Updated: Applying");
-        }
-        #endregion
 
         #region For Exports, Serialization etc.
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
