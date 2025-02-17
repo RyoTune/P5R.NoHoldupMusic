@@ -1,0 +1,21 @@
+{
+  "ModId": "P5R.NoHoldupMusic",
+  "ModName": "Some Holdup Music",
+  "ModAuthor": "RyoTune",
+  "ModVersion": "1.0.0",
+  "ModDescription": "Adjust hold-up music to player after starting negotiations or disable completely.",
+  "ModDll": "P5R.NoHoldupMusic.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/P5R.NoHoldupMusic.dll",
+  "ModR2RManagedDll64": "x64/P5R.NoHoldupMusic.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "P5R.NoHoldupMusic.ReleaseMetadata.json",
+  "PluginData": {},
+  "IsUniversalMod": false,
+  "ModDependencies": [ "reloaded.sharedlib.hooks", "Reloaded.Memory.SigScan.ReloadedII" ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [],
+  "ProjectUrl": ""
+}
