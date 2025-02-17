@@ -14,6 +14,7 @@ namespace P5R.NoHoldupMusic
 
         private Config config;
         private readonly IModConfig modConfig;
+        private readonly HoldupService _holdup;
 
         public Mod(ModContext context)
         {
@@ -25,6 +26,10 @@ namespace P5R.NoHoldupMusic
             this.modConfig = context.ModConfig;
 
             Project.Init(this.modConfig, this.modLoader, this.log, true);
+
+            _holdup = new HoldupService();
+
+            Project.Start();
         }
 
         #region Standard Overrides
